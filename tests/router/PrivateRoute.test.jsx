@@ -26,7 +26,7 @@ describe('Pruebas en PrivateRoute', () => {
             </AuthContext.Provider>
         );
 
-        expect(screen.getAllByText('Ruta privada')).toBeTruthy();
+        expect(screen.getByText('Ruta privada')).toBeTruthy();
         expect(localStorage.setItem).toHaveBeenCalledWith('lastPath', '/search?q=batman');
 
     });
