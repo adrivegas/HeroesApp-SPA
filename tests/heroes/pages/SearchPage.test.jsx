@@ -70,7 +70,7 @@ describe('Pruebas en SearchPage', () => {
             </MemoryRouter>
         );
         
-        screen.debug();
+        // screen.debug();
         const input = screen.getByRole('textbox');
         fireEvent.change( input, { target: { name: 'searchText', value: inputValue }})
         
